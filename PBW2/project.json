@@ -1,0 +1,34 @@
+{
+  "name": "Barber Pangling",
+  "version": "1.0.0",
+  "description": "Sistem Booking Barbershop Professional",
+  "author": "Development Team",
+  "type": "web-application",
+  "license": "MIT",
+  "keywords": [
+    "barber",
+    "booking",
+    "barbershop",
+    "haircut",
+    "php",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "directories": {
+    "public": "public",
+    "app": "app",
+    "database": "database"
+  },
+  "project": {
+    "name": "Barber Pangling Booking System",
+    "domain": "localhost",
+    "port": 3000,
+    "environment": "development"
+  },
+  "structure": {
+    "public": "Frontend assets (HTML, CSS, JS, Images)",
+    "app": "Backend application logic",
+    "database": "Database schemas and migrations"
+  }
+}

@@ -1,0 +1,59 @@
+/* Services Page Styles */
+
+.service-detail {
+    background: linear-gradient(135deg, rgba(45, 156, 79, 0.1) 0%, rgba(45, 156, 79, 0.05) 100%);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid #2D9C4F;
+    border-radius: 8px;
+}
+
+.service-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service-detail h2 {
+    color: #2D9C4F;
+    margin: 0;
+}
+
+.service-detail .price {
+    background: #2D9C4F;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.service-detail ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.service-detail li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #ccc;
+}
+
+.service-detail li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2D9C4F;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .service-detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

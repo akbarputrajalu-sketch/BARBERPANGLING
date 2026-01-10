@@ -1,0 +1,133 @@
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+.footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(45, 45, 45, 0.95) 100%);
+    color: #fff;
+    padding: 3rem 2rem 1.5rem;
+    border-top: 2px solid #2D9C4F;
+    margin-top: 4rem;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #2D9C4F 0%, #4CAF7F 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer .logo-text {
+    background: linear-gradient(135deg, #fff 0%, #2D9C4F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer > .container > p:first-of-type {
+    color: #b0b0b0;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.social-links a {
+    color: #2D9C4F;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0.5rem 1rem;
+    border: 1px solid #2D9C4F;
+    border-radius: 4px;
+}
+
+.social-links a:hover {
+    background: #2D9C4F;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 156, 79, 0.3);
+}
+
+.footer > .container > p:last-child {
+    color: #808080;
+    font-size: 0.85rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(45, 156, 79, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .footer-logo {
+        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0.8rem 1rem;
+    }
+
+    .footer-logo {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .social-links a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,100 @@
+/* About Page Styles */
+
+.about-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-card {
+    background: linear-gradient(135deg, rgba(45, 156, 79, 0.1) 0%, rgba(45, 156, 79, 0.05) 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #2D9C4F;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(45, 156, 79, 0.2);
+}
+
+.about-card h3 {
+    color: #2D9C4F;
+    margin-bottom: 1rem;
+}
+
+.team-section {
+    margin-top: 3rem;
+}
+
+.team-section h3 {
+    text-align: center;
+    color: #2D9C4F;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #2D9C4F;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.team-member h4 {
+    color: #2D9C4F;
+    margin: 0.5rem 0 0.25rem;
+}
+
+.team-member p {
+    color: #fff;
+    margin: 0.25rem 0;
+}
+
+.team-member small {
+    color: #999;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,133 @@
+/* Payment Page Styles */
+
+.payment-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.booking-summary,
+.payment-methods,
+.payment-details {
+    background: linear-gradient(135deg, rgba(45, 156, 79, 0.05) 0%, rgba(0, 0, 0, 0.3) 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(45, 156, 79, 0.3);
+}
+
+.booking-summary h3,
+.payment-methods h3,
+.payment-details h3 {
+    color: #2D9C4F;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(45, 156, 79, 0.2);
+    color: #ccc;
+}
+
+.summary-item.total {
+    border-top: 2px solid #2D9C4F;
+    border-bottom: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #2D9C4F;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    flex: 1;
+    padding: 1rem;
+    background: rgba(45, 156, 79, 0.1);
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.payment-option input[type="radio"]:checked + label {
+    border-color: #2D9C4F;
+    background: rgba(45, 156, 79, 0.2);
+}
+
+.payment-option .icon {
+    font-size: 1.5rem;
+}
+
+.payment-option .label {
+    font-weight: 600;
+    color: #fff;
+}
+
+.payment-option .desc {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.payment-detail-content {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.payment-detail-content p {
+    margin: 0.5rem 0;
+}
+
+.terms-and-conditions {
+    margin-bottom: 2rem;
+}
+
+.terms-and-conditions label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.terms-and-conditions input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.btn-large {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .booking-summary,
+    .payment-methods,
+    .payment-details {
+        padding: 1.5rem;
+    }
+
+    .payment-option label {
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    .payment-option .desc {
+        display: none;
+    }
+}
