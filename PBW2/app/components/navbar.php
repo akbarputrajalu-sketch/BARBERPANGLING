@@ -11,8 +11,8 @@
         
         <ul class="nav-menu">
             <li><a href="<?php echo BASE_URL; ?>?page=home">Beranda</a></li>
-            <li><a href="<?php echo BASE_URL; ?>?page=services">Layanan</a></li>
-            <li><a href="<?php echo BASE_URL; ?>?page=booking">Booking</a></li>
+            <li><a href="<?php echo BASE_URL; ?>?page=home#services">Layanan</a></li>
+            <li><a href="<?php echo BASE_URL; ?>?page=home#booking">Booking</a></li>
             <li><a href="<?php echo BASE_URL; ?>?page=about">Tentang</a></li>
             <li><a href="<?php echo BASE_URL; ?>?page=contact">Kontak</a></li>
         </ul>

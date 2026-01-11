@@ -155,10 +155,24 @@ function setupBookingForm() {
 
         // Save to localStorage
         localStorage.setItem('bookingData', JSON.stringify(bookingData));
-        console.log('✅ Booking saved to localStorage:', bookingData);
+        console.log('✅ Booking saved:', bookingData);
 
-        // Submit form to server (POST to current page for backend CRUD)
-        bookingForm.submit();
+        // Show success message
+        const successMsg = document.querySelector('.success-message');
+        if (successMsg) {
+            successMsg.style.display = 'block';
+            successMsg.scrollIntoView({ behavior: 'smooth' });
+            
+            // Disable submit button
+            const submitBtn = bookingForm.querySelector('.form-submit');
+            if (submitBtn) submitBtn.disabled = true;
+            
+            // Redirect to payment after 2 seconds
+            setTimeout(() => {
+                const baseUrl = window.location.origin + window.location.pathname;
+                window.location.href = baseUrl + '?page=payment';
+            }, 2000);
+        }
     });
 }
 

@@ -1,5 +1,15 @@
 <?php
+/**
+ * ===================================================
+ * BARBER PANGLING - Main Index (Router)
+ * ===================================================
+ * Entry point utama aplikasi dengan routing system
+ * Semua request masuk ke file ini, kemudian di-route
+ * ke page/view yang sesuai
+ */
 
+// ===== CONFIGURATION & CONSTANTS =====
+// Dynamic BASE_URL untuk development
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $host = $_SERVER['HTTP_HOST'];
 $basePath = str_replace(basename(__FILE__), '', $_SERVER['PHP_SELF']);
@@ -39,11 +49,6 @@ $page_title = $available_pages[$page];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title; ?> - Barber Pangling</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Main Styles -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/styles.css">

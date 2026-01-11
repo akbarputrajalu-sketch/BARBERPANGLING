@@ -6,8 +6,8 @@
                 <h1>Gaya Rambut <span class="highlight">Premium</span> untuk Pria Modern</h1>
                 <p>Rasakan pengalaman barbershop terbaik dengan layanan profesional dan suasana yang nyaman. Booking sekarang dan dapatkan potongan rambut impian Anda.</p>
                 <div class="hero-buttons">
-                    <a href="<?php echo BASE_URL; ?>?page=booking" class="btn-primary">Booking Sekarang</a>
-                    <a href="<?php echo BASE_URL; ?>?page=services" class="btn-secondary">Lihat Layanan</a>
+                    <a href="<?php echo BASE_URL; ?>?page=home#booking" class="btn-primary">Booking Sekarang</a>
+                    <a href="<?php echo BASE_URL; ?>?page=home#services" class="btn-secondary">Lihat Layanan</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -25,7 +25,38 @@
 <!-- Booking Section -->
 <?php include COMPONENTS_PATH . 'booking-section.php'; ?>
 
-<?php include COMPONENTS_PATH . 'about-section.php'; ?>
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Tentang <span class="highlight">Barber Pangling</span></h2>
+                <p>Dengan pengalaman lebih dari 5 tahun, kami telah melayani ribuan pelanggan dengan standar kualitas tertinggi. Tim barber profesional kami selalu mengikuti tren terkini dan menggunakan peralatan premium.</p>
+                <ul class="features-list">
+                    <li>
+                        <div class="feature-icon">✓</div>
+                        <span>Barber bersertifikat internasional</span>
+                    </li>
+                    <li>
+                        <div class="feature-icon">✓</div>
+                        <span>Peralatan premium dan steril</span>
+                    </li>
+                    <li>
+                        <div class="feature-icon">✓</div>
+                        <span>Suasana nyaman dan modern</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-visual">
+                <div class="award-card">
+                    <div class="icon">🏆</div>
+                    <h3>Award Winner</h3>
+                    <p>Best Barbershop 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Contact Section -->
 <section id="contact" class="section">
